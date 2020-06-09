@@ -1,0 +1,25 @@
+ul 
+			{
+			  list-style-type: none;
+			  margin: 0;
+			  font-size: 32px;
+			  font-family: Arial; 
+			  position: relative;
+			  left: 0    px;
+			  padding: 8px;
+			  background-color: #dddddd;
+			}
+			li
+			{
+				display: inline;
+			}
+			li a
+			 {
+
+			 	  text-decoration: none;
+				  padding: 8px;
+				  background-color: #dddddd;
+			 }
+body{
+	background-image:url('C:\Users\DELL\Pictures\Untitled Document.png');
+}
