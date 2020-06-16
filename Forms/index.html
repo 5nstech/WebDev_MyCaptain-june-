@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <section class="signup">
+            <div class="container">
+                <div class="content">
+                    <form method="POST" id="detail" class="detail">
+                        <h2>Create account</h2>
+                        <div class="collection">
+                            <input type="text" class="form-input" name="name" id="name" placeholder="Your Name" required/>
+                        </div>
+                        <div class="collection">
+                            <input type="email" class="form-input" name="email" id="email" placeholder="Your Email" required/>
+                        </div>
+                        <div class="collection">
+                            <input type="password" class="form-input" name="password" id="password" placeholder="Password" required />
+                        </div>
+                        <div class="collection">
+                            <input type="password" class="form-input" name="re_password" id="re_password" placeholder="Repeat your password" required/>
+                        </div>
+                        <div class="collection">
+	                           <label ><span><span></span></span>I agree all statements in  <a href="#">Terms of service</a></label>
+                        </div>
+                        <div class="collection">
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
+                        </div>
+                    </form>
+                    <p class="loginhere">
+                        Already Have  an account ? <a href="C:\Users\DELL\Desktop\My Part\SignIN\index.html" class="loginhere-link">Login here</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript">
+		    	
+		   var password = document.getElementById("password")
+		  , confirm_password = document.getElementById("re_password");
+
+		function validatePassword()
+		{
+		  if(password.value != re_password.value) 
+		  {
+		    re_password.setCustomValidity("Passwords Don't Match");
+		  } 
+		  else 
+		  {
+		    re_password.setCustomValidity('');
+		  }
+		}
+		password.onchange = validatePassword;
+		re_password.onkeyup = validatePassword;
+    </script>>
+</body>
+</html>
